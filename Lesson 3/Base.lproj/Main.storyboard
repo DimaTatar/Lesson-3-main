@@ -109,46 +109,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="432" translatesAutoresizingMaskIntoConstraints="NO" id="Yke-vv-ulF">
-                                <rect key="frame" x="154.33333333333334" y="111.33333333333331" width="105.33333333333334" height="619.66666666666674"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IFj-Bc-iVs">
+                                <rect key="frame" x="166" y="111.33333333333333" width="82.333333333333314" height="143.66666666666669"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IFj-Bc-iVs">
-                                        <rect key="frame" x="11.666666666666657" y="0.0" width="82.333333333333329" height="143.66666666666666"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TCn-dm-ENg">
-                                                <rect key="frame" x="0.0" y="0.0" width="82.333333333333329" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👏🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-93-0zw">
-                                                <rect key="frame" x="8.6666666666666572" y="72" width="65" height="71.666666666666686"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSf-QZ-4Z7">
-                                        <rect key="frame" x="0.0" y="575.66666666666663" width="105.33333333333333" height="44"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Log out">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="pressLogOut" destination="zAz-JV-dYE" eventType="touchUpInside" id="HOq-T5-7Ys"/>
-                                            <segue destination="6Ku-V1-Qd3" kind="unwind" unwindAction="unwindFor:" id="pO1-O1-esh"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TCn-dm-ENg">
+                                        <rect key="frame" x="0.0" y="0.0" width="82.333333333333329" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👏🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-93-0zw">
+                                        <rect key="frame" x="8.6666666666666572" y="72" width="65" height="71.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSf-QZ-4Z7">
+                                <rect key="frame" x="154.33333333333334" y="687" width="105.33333333333334" height="44"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressLogOut" destination="zAz-JV-dYE" eventType="touchUpInside" id="HOq-T5-7Ys"/>
+                                    <segue destination="6Ku-V1-Qd3" kind="unwind" unwindAction="unwindFor:" id="pO1-O1-esh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hct-Vv-IGJ"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
-                            <constraint firstItem="Yke-vv-ulF" firstAttribute="centerX" secondItem="AR1-CP-OWo" secondAttribute="centerX" id="5en-nl-dXA"/>
-                            <constraint firstItem="Yke-vv-ulF" firstAttribute="centerY" secondItem="AR1-CP-OWo" secondAttribute="centerY" id="dyR-ZG-WBv"/>
+                            <constraint firstItem="Hct-Vv-IGJ" firstAttribute="bottom" secondItem="VSf-QZ-4Z7" secondAttribute="bottom" constant="77" id="2n7-75-uDH"/>
+                            <constraint firstItem="IFj-Bc-iVs" firstAttribute="centerX" secondItem="AR1-CP-OWo" secondAttribute="centerX" id="GYV-eA-nPQ"/>
+                            <constraint firstItem="IFj-Bc-iVs" firstAttribute="top" secondItem="Hct-Vv-IGJ" secondAttribute="top" constant="111.33" id="kKS-1w-J8I"/>
+                            <constraint firstItem="VSf-QZ-4Z7" firstAttribute="centerX" secondItem="AR1-CP-OWo" secondAttribute="centerX" id="yzh-uY-ywn"/>
                         </constraints>
                     </view>
                     <connections>
